@@ -3,7 +3,7 @@ import ErrorHandler from '../utils/errorHandeler.js';
 
 const user = {
     user:(data,next,callback)=>{
-        const userExist = true;
+        const userExist = false;
         if(userExist){
             return next(new ErrorHandler("users Already Exist",400))
         }
